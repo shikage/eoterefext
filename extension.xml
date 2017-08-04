@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root version="3.0">
+	<!-- Announcement to notify module was loaded -->
+	<announcement 
+		text="Star Wars Eeference Manual Extension v1.1\rInclude Reference Manuals and Pregen Characters in your EotE modules with this handy Extension." 
+		font="emotefont" />
+	
+	<!-- Attributes -->
+	<properties>
+		<name>Star Wars Reference Manual Extension</name>
+		<version>1.1</version>
+		<author>ShiKage</author>
+		<description>Enhances the Star Wars EotE Ruleset with Reference Manual library module support.</description>
+		<ruleset><name>Star Wars EotE</name></ruleset>
+	</properties>
+	<base>	
+		<!-- Graphics -->
+		<includefile source="graphics/graphics_reference.xml" />
+		
+		<!-- Strings -->
+		<includefile source="strings/strings_reference.xml" />
+		
+		<!-- Templates -->
+		<includefile source="ref/template_ref.xml" />
+		<includefile source="ref/ref_basicclasses.xml" />
+		<includefile source="ref/ref_pregenchar.xml" />
+		<includefile source="ref/ref_manual.xml" />				
+	</base>
+</root>

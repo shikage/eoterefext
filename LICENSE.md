@@ -1,0 +1,1 @@
+This extension makes extensive use of content from the CoreRPG ruleset. The CoreRPG Ruleset and it's files are are copyright 2004-2013, Smiteworks USA LLC.

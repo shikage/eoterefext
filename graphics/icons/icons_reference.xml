@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+	<icon name="button_link_down" file="graphics/icons/button_link_down.png" />
+	<icon name="button_link_empty" file="graphics/icons/button_link_empty.png" />
+	<icon name="window_resize" file="graphics/icons/window_resize.png" />
+	<icon name="window_resize_filled" file="graphics/icons/window_resize_filled.png" />
+	<icon name="blank" file="graphics/icons/blank.png" />
+	<icon name="button_add" file="graphics/icons/button_add.png" />
+	<icon name="button_add_down" file="graphics/icons/button_add_down.png" />
+</root>

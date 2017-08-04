@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+	<string name="ref_window_title">Reference</string>
+	<string name="ref_label_weightsuffix">lb.</string>
+	<string name="pregenchar_tooltip_add">Add Pre-Gen Character to Campaign</string>
+	<string name="pregenchar_message_add">Pre-Generated Character added to campaign.</string>
+</root>

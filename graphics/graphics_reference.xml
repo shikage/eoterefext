@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+	<includefile source="graphics/frames/frames_reference.xml" />
+	<includefile source="graphics/fonts/fonts_reference.xml" />
+	<includefile source="graphics/icons/icons_reference.xml" />
+</root>

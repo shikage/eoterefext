@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- 
+  Please see the license.html file included with this distribution for 
+  attribution and copyright information.
+-->
+
+<root>
+	<windowclass name="pregencharselect">
+		<frame>indexbox</frame>
+		<placement>
+			<size width="570" height="450" />
+		</placement>
+		<nodelete />
+		<sheetdata>
+			<genericcontrol>
+				<bounds>111,0,348,40</bounds>
+				<frame>
+					<name>indexboxtitlecharacters</name>
+				</frame>
+			</genericcontrol>
+			<windowlist name="pregencharlist">
+				<bounds>50,43,470,370</bounds>
+				<datasource>.</datasource>
+				<class>pregencharselect_entry</class>
+				<columns>
+					<width>235</width>
+					<fillwidth />
+				</columns>
+				<readonly />
+			</windowlist>
+			<scrollercontrol>
+				<bounds>-60,-41,45,27</bounds>
+				<target>pregencharlist</target>
+				<button>
+					<normal>button_scroller</normal>
+					<pressed>button_scroller_down</pressed>
+					<zoom>button_zoomer_clear</zoom>
+					<zoompressed>button_zoomer_clear_down</zoompressed> 					
+				</button>
+			</scrollercontrol>
+			
+			<closebutton>
+				<anchored>
+					<top>
+						<offset>0</offset>
+					</top>
+					<right>
+						<offset>-6</offset>
+					</right>
+				</anchored>
+			</closebutton>
+		</sheetdata>
+	</windowclass>
+	
+	<windowclass name="pregencharselect_entry">
+		<frame>modifier</frame>
+		<sizelimits>
+			<minimum height="92" />
+			<maximum width="235" />
+		</sizelimits>
+		<script>
+			function onInit()
+				local node = getDatabaseNode();
+				source.setValue(node.getModule());
+				details.setValue(getDetails());
+			end
+			
+			function openSheet()
+				local node = getDatabaseNode();
+				Interface.openWindow("charsheet", node.getNodeName());
+			end
+			
+			function getDetails()
+				local sCareer = getDatabaseNode().getChild("career");
+				local sSpecs = getDatabaseNode().getChild("specializations");
+				local sDetails = "";
+				local op = "";
+				local cl = "";
+				
+				if (sCareer) then
+					sDetails = sCareer.getValue();
+					op = " (";
+					cl = ")";
+				end
+				
+				if (sSpecs) then
+					sDetails = sDetails .. op .. sSpecs.getValue() .. cl;
+				end
+				
+				return sDetails;
+			end
+			
+			function addCharacter()
+				local node = getDatabaseNode();
+				local nodeTarget = DB.createChild("charsheet");
+				DB.copyNode(node, nodeTarget);
+
+				local msg = {};
+				msg.font = "msgfont";
+				msg.text = Interface.getString("pregenchar_message_add");
+				
+				ChatManager.deliverMessage(msg); 
+			end
+		</script>
+		<sheetdata>
+			<genericcontrol name="portraitbase">
+				<bounds>10,10,72,72</bounds>
+				<disabled />
+				<icon>charlist_base</icon>
+			</genericcontrol>
+			<tokenfield name="token">
+				<bounds>10,10,72,72</bounds>
+				<readonly />
+			</tokenfield>
+
+			<stringfield name="name">
+				<bounds>90,11,-10,20</bounds>
+				<font>sheettext</font>
+				<empty>&#171; Unnamed &#187;</empty>
+				<disabled />
+			</stringfield>
+			<stringcontrol name="details">
+				<anchored to="name" position="belowleft">
+					<right />
+				</anchored>
+				<multilinespacing>20</multilinespacing>
+				<font>chatfont</font>
+				<disabled />
+			</stringcontrol>
+			<stringcontrol name="source">
+				<anchored to="details" position="belowleft">
+					<right />
+				</anchored>
+				<multilinespacing>20</multilinespacing>
+				<font>chatfont</font>
+				<disabled />
+			</stringcontrol>
+
+			<buttoncontrol name="base">
+				<anchored position="insidetopleft">
+					<right />
+					<bottom parent="source" offset="12" />
+				</anchored>
+				<script>
+					function onClickDown(button, x, y)
+						return true;
+					end
+					
+					function onClickRelease(button, x, y)
+						window.openSheet();
+						return true;
+					end
+				</script>
+			</buttoncontrol>
+
+			<buttoncontrol name="iadd">
+				<anchored to="base" position="insidebottomright" offset="10,10" width="20" height="20" />
+				<icon normal="button_add" pressed="button_add_down" />
+				<tooltip textres="tooltip_pregenchar_add" />
+				<script>
+					function onButtonPress()
+						window.addCharacter();
+					end
+				</script>
+				<gmvisibleonly />
+			</buttoncontrol>
+		</sheetdata>
+	</windowclass>
+</root>

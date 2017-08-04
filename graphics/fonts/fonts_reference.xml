@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+	<!-- Reference -->
+	<font name="reference-section">
+		<fgffile name="graphics/fonts/title-regular-10.fgf" />
+		<color value="3B2C21" />
+	</font>
+	<font name="reference-chapter">
+		<fgffile name="graphics/fonts/title-regular-10.fgf" />
+		<color value="3B2C21" />
+	</font>
+	<font name="reference-header">
+		<fgffile name="graphics/fonts/bold-10.fgf" />
+		<color value="#000000" />
+	</font>
+	<font name="reference-groupdesc">
+		<fgffile name="graphics/fonts/bold-10.fgf" />
+		<color value="#FFFFFF" />
+	</font>
+	<font name="reference-groupsubdesc">
+		<fgffile name="graphics/fonts/italic-10.fgf" />
+		<color value="#FFFFFF" />
+	</font>
+	
+	<font name="reference-r">
+		<fgffile name="graphics/fonts/regular.fgf" />
+		<color value="#000000" />
+	</font>
+
+	<font name="reference-i">
+		<fgffile name="graphics/fonts/regularitalic.fgf" />
+		<color value="#000000" />
+	</font>
+
+	<font name="reference-b">
+		<fgffile name="graphics/fonts/regularbold.fgf" />
+		<color value="#000000" />
+	</font>
+	
+	<font name="reference-bi">
+		<fgffile name="graphics/fonts/regularbolditalic.fgf" />
+		<color value="#000000" />
+	</font>
+	
+	<font name="reference-h">
+		<fgffile name="graphics/fonts/title.fgf" />
+		<color value="#000000" />
+	</font>
+	
+	<font name="windowtitle">
+		<fgffile name="graphics/fonts/starjedi-regular-24.fgf" />
+		<color value="#000000" />
+	</font>
+</root>

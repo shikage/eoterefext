@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+	<!-- Reference -->
+	<framedef name="reference-section">
+		<bitmap file="graphics/frames/reference-section.png" />
+		<offset>1,1,1,1</offset>
+	</framedef>
+	<framedef name="reference-chapter">
+		<bitmap file="graphics/frames/reference-chapter.png" />
+		<offset>1,1,1,1</offset>
+	</framedef>
+	
+	<!-- Reference Blocks -->
+	<framedef name="referenceblock-sidebar">
+		<bitmap file="graphics/frames/refblock_sidebar.png" />
+		<offset>100,50,100,50</offset>
+	</framedef>
+	<framedef name="referenceblock-text1">
+		<bitmap file="graphics/frames/refblock_text1.png" />
+		<offset>50,60,50,60</offset>
+	</framedef>
+	<framedef name="referenceblock-text2">
+		<bitmap file="graphics/frames/refblock_text2.png" />
+		<offset>50,60,50,60</offset>
+	</framedef>
+	<framedef name="referenceblock-text3">
+		<bitmap file="graphics/frames/refblock_text3.png" />
+		<offset>50,60,50,60</offset>
+	</framedef>
+	<framedef name="referenceblock-text4">
+		<bitmap file="graphics/frames/refblock_text4.png" />
+		<offset>50,60,50,60</offset>
+	</framedef>
+	<framedef name="referenceblock-text5">
+		<bitmap file="graphics/frames/refblock_text5.png" />
+		<offset>100,50,100,50</offset>
+	</framedef>
+	<framedef name="referenceblock-book">
+		<bitmap file="graphics/frames/refblock_book.png" />
+		<offset>60,53,70,47</offset>
+	</framedef>
+	<framedef name="referenceblock-page">
+		<bitmap file="graphics/frames/refblock_page.png" />
+		<topleft rect="0,0,25,50" />
+		<top rect="25,0,250,50" />
+		<topright rect="275,0,50,50" />
+		<left rect="0,50,25,50" />
+		<middle rect="25,50,250,50" />
+		<right rect="275,50,50,50" />
+		<bottomleft rect="0,100,25,50" />
+		<bottom rect="25,100,250,50" />
+		<bottomright rect="275,100,50,50" />
+	</framedef>
+	<framedef name="referenceblock-picture">
+		<bitmap file="graphics/frames/refblock_picture.png" />
+		<offset>32,30,32,30</offset>
+	</framedef>
+	<framedef name="referenceblock-pink">
+		<bitmap file="graphics/frames/refblock_pink.png" />
+		<offset>100,50,100,50</offset>
+	</framedef>
+	<framedef name="referenceblock-blue">
+		<bitmap file="graphics/frames/refblock_blue.png" />
+		<offset>100,50,100,50</offset>
+	</framedef>
+	<framedef name="referenceblock-brown">
+		<bitmap file="graphics/frames/refblock_brown.png" />
+		<offset>100,50,100,50</offset>
+	</framedef>
+	<framedef name="referenceblock-green">
+		<bitmap file="graphics/frames/refblock_green.png" />
+		<offset>100,50,100,50</offset>
+	</framedef>
+	
+	<framedef name="referencepage">
+		<bitmap file="graphics/frames/referencepage.png" />
+		<offset>130,100,100,100</offset>
+		<insideoffset>0,0,5,5</insideoffset>
+	</framedef> 
+	<framedef name="referencelist">
+		<bitmap file="graphics/frames/referencepage.png" />
+		<offset>130,100,100,100</offset>
+		<insideoffset>0,0,5,5</insideoffset>
+	</framedef> 
+	
+	<framedef name="utilitybox3">
+		<bitmap file="graphics/frames/utilitybox3.png" />
+		<offset>74,75,77,51</offset>
+		<insideoffset>0,0,5,7</insideoffset>
+	</framedef>
+	
+	<framedef name="groupbox">
+		<bitmap file="graphics/frames/groupbox.png" />
+		<offset>18,18,17,17</offset>
+	</framedef>
+	
+	<framedef name="windowtitle">
+		<bitmap file="graphics/frames/referencetitle.png" />
+		<left rect="0,0,25,40" />
+		<middle rect="25,0,293,40" />
+		<right rect="318,0,30,40" />
+	</framedef>
+	
+</root>
